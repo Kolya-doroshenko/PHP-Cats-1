@@ -1,0 +1,30 @@
+nekromant512.cats_page:
+  path: '/nekromant512/cats'
+  defaults:
+    _controller: '\Drupal\nekromant512\Controller\Nekromant512Controller::report'
+    _title: 'Cats'
+  requirements:
+    _permission: 'access content'
+
+nekromant512.cats_delete_page:
+  path: '/nekromant512/catsDel/{cid}'
+  defaults:
+    _form: '\Drupal\nekromant512\Form\CatDeleteForm'
+    _title: 'Remove?'
+  requirements:
+    _permission: 'administer nodes'
+
+nekromant512.cats_edit_page:
+  path: '/admin/nekromant512/catsChange/{cid}'
+  defaults:
+    _form: '\Drupal\nekromant512\Form\CatChangeForm'
+    _title: 'You can edit cat here.'
+  requirements:
+    _permission: 'administer nodes'
+
+nekromant512admin.cats_page:
+  path: '/admin/structure/cats'
+  defaults:
+    _form: '\Drupal\nekromant512\Form\CatadminForm'
+  requirements:
+    _permission: 'administer nodes'

@@ -1,0 +1,50 @@
+<?php
+
+function nekromant512_schema() {
+  $schema['nekromant512'] = array(
+    'description' => 'stores email, name and uid for cats',
+    'fields' => array(
+      'id' => array(
+        'description' => 'The primary identifier for the cat.',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'uid' => array(
+        'description' => 'The {users}.uid that added this cat',
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'name' => array(
+        'description' => "User\'s cat name.",
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => FALSE,
+        'default' => '',
+      ),
+      'mail' => array(
+        'description' => "User\'s email address.",
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => FALSE,
+        'default' => '',
+      ),
+      'image' => array(
+        'description' => "User\'s cat picture.",
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'created' => array(
+        'description' => 'Timestamp when cat was submitted.',
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => FALSE,
+        'default' => '',
+      ),
+    ),
+    'primary key' => array('id'),
+  );
+  return $schema;
+}

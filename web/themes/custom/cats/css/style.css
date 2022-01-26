@@ -1,0 +1,73 @@
+#suppernavbar{
+    background-color: lightgray;
+}
+
+#navbar{
+    background-color: white;
+}
+.messages__wrapper .alert.alert-danger.alert-dismissible .item-list.item-list--messages .item.item--message{
+  display: none;
+}
+#cat-form{
+  padding: 35px;
+  background: lightgrey;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.input-group{
+  width: 100%;
+}
+.page-header{
+  text-align: center;
+}
+.alert.alert-danger.alert-dismissible, .messages__wrapper, .input-group-addon{
+  display: none;
+}
+#form-system-messages{
+  display: none;
+}
+.col-md-3.offset-md-3{
+  margin: 50px 50px 50px 50px;
+}
+.row.underline_cats{
+  background: lightgray;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+.info{
+  padding: 60px;
+  margin-right: 200px;
+  font-size: 16px;
+}
+.image-container{
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+}
+.image-container img{
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.buttons .button{
+  background: white;
+  text-decoration: none;
+  color: black;
+  margin: 10px 75px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#block-seven-content{
+  background: lightgray;
+  padding: 30px;
+  border-radius: 50px;
+}

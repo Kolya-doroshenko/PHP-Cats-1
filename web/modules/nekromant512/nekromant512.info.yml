@@ -1,0 +1,5 @@
+name: Nekromant512
+type: module
+core_version_requirement: ^8.8 || ^9
+description: 'cats'
+package: Custom

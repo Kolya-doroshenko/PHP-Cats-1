@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function nekromant512_theme($existing, $type, $theme, $path) {
+  return [
+    'cat_template' => [
+      'variables' => ['form' => [], 'items' => [], 'delete' => [], 'edit',],
+    ],
+  ];
+}
